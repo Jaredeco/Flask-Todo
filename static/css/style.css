@@ -1,0 +1,17 @@
+body{
+	background-color: lightblue;
+}
+#deletebtn{
+	color: red;
+	text-decoration: none;
+}
+div{
+	margin: 10px;
+	padding: 2px;
+	background-color: lightgreen;
+	border-radius: 10px;
+	padding: 7px;
+}
+input{
+	color: black;
+}

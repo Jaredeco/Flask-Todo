@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo App</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+	<form class="addtodo" method="POST">
+	    <input name="text" type="text" placeholder="Add todo item...">
+	    <input type="submit" value="Add"name="submit">
+	</form>
+	{%for val in t%}
+		<div id="con">
+			<p>{{val.todo_v}}</p>
+			<a href="{{url_for('delete', _id = val._id)}}"  id="deletebtn">Remove task</a>
+		</div>
+		<hr>
+	{% endfor %}
+</body>
+</html>
